@@ -1,0 +1,15 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: AIGOU-PRODUCT
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///aigou-product?useSSL=false
+    username: root
+    password: root
+#mybatis会自动把驼峰命名的属性转换为_连接的字段，如类中是inputTime,数据库中就会去找input_time
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  type-aliases-package: cn.itsource.aigou.domain,cn.itsource.aigou.query	#扫描包，取别名
