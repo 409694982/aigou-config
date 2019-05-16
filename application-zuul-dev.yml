@@ -10,3 +10,6 @@ zuul:
     plat:
       path: /plat/**
       service-id: aigou-plat
+    product:
+      path: /product/**
+      service-id: aigou-product
