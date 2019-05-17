@@ -1,0 +1,5 @@
+server:
+  port: 1825
+spring:
+  application:
+    name: COMMON
