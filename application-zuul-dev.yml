@@ -16,4 +16,8 @@ zuul:
     common:
       path: /common/**
       service-id: common
+common: 
+  ribbon:
+    ConnectTimeout: 1000
+    ReadTimeout: 5000
    
